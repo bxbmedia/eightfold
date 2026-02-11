@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>eightfold — Team Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <!-- Animated Background -->
+            <div class="background-glow"></div>
+            <div class="background-grid"></div>
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+
+            <!-- Navigation -->
+            <nav class="nav" id="nav">
+                <div class="nav-content">
+                    <a href="#" class="nav-logo">eight<span>fold</span></a>
+                    <ul class="nav-links">
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#team" class="nav-link">Team</a></li>
+                        <li>
+                            <a href="#workflow" class="nav-link">Workflow</a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://github.com/bxbmedia/eightfold"
+                                class="nav-link"
+                                target="_blank"
+                                >GitHub</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Hero Section -->
+            <section class="hero" id="hero">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    Git Training Exercise
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-title-gradient">eightfold</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Eight developers. Eight portfolios. One repository.<br />
+                    Master Git through collaborative learning.
+                </p>
+                <div class="hero-cta">
+                    <a href="#team" class="btn btn-primary"> Meet the Team </a>
+                    <a href="#workflow" class="btn btn-secondary">
+                        How It Works
+                    </a>
+                </div>
+                <div class="hero-scroll">
+                    <span>Scroll</span>
+                    <div class="hero-scroll-line"></div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="section" id="about">
+                <div class="container">
+                    <div class="section-header animate-on-scroll">
+                        <span class="section-label">About</span>
+                        <h2 class="section-title">Learn Git the Right Way</h2>
+                        <p class="section-description">
+                            A hands-on training exercise where each developer
+                            creates their portfolio page using real-world Git
+                            workflows.
+                        </p>
+                    </div>
+
+                    <div class="features-grid">
+                        <div class="feature-card animate-on-scroll">
+                            <div class="feature-icon">🌿</div>
+                            <h3 class="feature-title">Branching Strategy</h3>
+                            <p class="feature-description">
+                                Create feature branches, work independently, and
+                                merge your changes without disrupting others.
+                            </p>
+                        </div>
+                        <div class="feature-card animate-on-scroll">
+                            <div class="feature-icon">🔀</div>
+                            <h3 class="feature-title">Merge Conflicts</h3>
+                            <p class="feature-description">
+                                Experience and resolve real merge conflicts when
+                                multiple developers edit the same file.
+                            </p>
+                        </div>
+                        <div class="feature-card animate-on-scroll">
+                            <div class="feature-icon">📝</div>
+                            <h3 class="feature-title">Pull Requests</h3>
+                            <p class="feature-description">
+                                Open PRs, request reviews, and learn the
+                                collaborative code review process used by teams
+                                worldwide.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Section -->
+            <section class="section portfolio-section" id="team">
+                <div class="container">
+                    <div class="section-header animate-on-scroll">
+                        <span class="section-label">Team</span>
+                        <h2 class="section-title">Meet Our Developers</h2>
+                        <p class="section-description">
+                            Each team member is building their portfolio. Click
+                            through to see their work.
+                        </p>
+                    </div>
+
+                    <div class="portfolio-grid">
+                        <!-- ============================================
+                         DEVELOPER CARDS — Edit your own card below!
+
+                         When your portfolio is ready:
+                         1. Replace "Portfolio coming soon..." with your tagline
+                         2. Update the link href to your folder
+                         3. Change btn-disabled to btn-primary
+                         ============================================ -->
+
+                        <!-- BAILEY -->
+                        <article class="card" id="bailey">
+                            <div class="avatar">
+                                <span class="avatar-icon">B</span>
+                            </div>
+                            <h2 class="card-name">Bailey</h2>
+                            <p class="card-tagline">Portfolio coming soon...</p>
+                            <a
+                                href="#"
+                                class="btn btn-disabled"
+                                aria-disabled="true"
+                                >View Portfolio</a
+                            >
+                        </article>
+
+                        <!-- DON -->
+                        <article class="card" id="don">
+                            <div class="avatar">
+                                <span class="avatar-icon">D</span>
+                            </div>
+                            <h2 class="card-name">Don</h2>
+                            <p class="card-tagline">Portfolio coming soon...</p>
+                            <a
+                                href="#"
+                                class="btn btn-disabled"
+                                aria-disabled="true"
+                                >View Portfolio</a
+                            >
+                        </article>
+
+                        <!-- JULIO -->
+                        <article class="card" id="julio">
+                            <div class="avatar">
+                                <span class="avatar-icon">J</span>
+                            </div>
+                            <h2 class="card-name">Julio</h2>
+                            <p class="card-tagline">Portfolio coming soon...</p>
+                            <a
+                                href="#"
+                                class="btn btn-disabled"
+                                aria-disabled="true"
+                                >View Portfolio</a
+                            >
+                        </article>
+
+                        <!-- KELVIN -->
+                        <article class="card" id="kelvin">
+                            <div class="avatar">
+                                <span class="avatar-icon">K</span>
+                            </div>
+                            <h2 class="card-name">Kelvin</h2>
+                            <p class="card-tagline">Portfolio coming soon...</p>
+                            <a
+                                href="#"
+                                class="btn btn-disabled"
+                                aria-disabled="true"
+                                >View Portfolio</a
+                            >
+                        </article>
+
+                        <!-- KRYSTIAN -->
+                        <article class="card" id="krystian">
+                            <div class="avatar">
+                                <span class="avatar-icon">K</span>
+                            </div>
+                            <h2 class="card-name">Krystian</h2>
+                            <p class="card-tagline">Portfolio coming soon...</p>
+                            <a
+                                href="#"
+                                class="btn btn-disabled"
+                                aria-disabled="true"
+                                >View Portfolio</a
+                            >
+                        </article>
+
+                        <!-- MIKE -->
+                        <article class="card" id="mike">
+                            <div class="avatar">
+                                <span class="avatar-icon">M</span>
+                            </div>
+                            <h2 class="card-name">Mike</h2>
+                            <p class="card-tagline">Portfolio coming soon...</p>
+                            <a
+                                href="#"
+                                class="btn btn-disabled"
+                                aria-disabled="true"
+                                >View Portfolio</a
+                            >
+                        </article>
+
+                        <!-- RION -->
+                        <article class="card" id="rion">
+                            <div class="avatar">
+                                <span class="avatar-icon">R</span>
+                            </div>
+                            <h2 class="card-name">Rion</h2>
+                            <p class="card-tagline">Portfolio coming soon...</p>
+                            <a
+                                href="#"
+                                class="btn btn-disabled"
+                                aria-disabled="true"
+                                >View Portfolio</a
+                            >
+                        </article>
+
+                        <!-- VLAD -->
+                        <article class="card" id="vlad">
+                            <div class="avatar">
+                                <span class="avatar-icon">V</span>
+                            </div>
+                            <h2 class="card-name">Vlad</h2>
+                            <p class="card-tagline">Portfolio coming soon...</p>
+                            <a
+                                href="#"
+                                class="btn btn-disabled"
+                                aria-disabled="true"
+                                >View Portfolio</a
+                            >
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Workflow Section -->
+            <section class="section" id="workflow">
+                <div class="container">
+                    <div class="section-header animate-on-scroll">
+                        <span class="section-label">Workflow</span>
+                        <h2 class="section-title">Your Path to Mastery</h2>
+                        <p class="section-description">
+                            Follow these steps to create your portfolio and
+                            level up your Git skills.
+                        </p>
+                    </div>
+
+                    <div class="steps-container">
+                        <div class="step animate-on-scroll">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Create Your Branch</h3>
+                                <p>
+                                    Start by creating a new feature branch for
+                                    your portfolio.
+                                </p>
+                                <code
+                                    >git checkout -b
+                                    add-[your-name]-portfolio</code
+                                >
+                            </div>
+                        </div>
+
+                        <div class="step animate-on-scroll">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Copy the Template</h3>
+                                <p>
+                                    Duplicate the template folder and rename it
+                                    with your name.
+                                </p>
+                                <code
+                                    >cp -r portfolios/template
+                                    portfolios/[your-name]</code
+                                >
+                            </div>
+                        </div>
+
+                        <div class="step animate-on-scroll">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Build Your Portfolio</h3>
+                                <p>
+                                    Fill in your project details, README
+                                    content, tech stack, and reflections.
+                                </p>
+                                <code
+                                    >Edit
+                                    portfolios/[your-name]/index.html</code
+                                >
+                            </div>
+                        </div>
+
+                        <div class="step animate-on-scroll">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>Update the Homepage</h3>
+                                <p>
+                                    Find your card on this page and update it
+                                    with your info and link.
+                                </p>
+                                <code>Edit index.html</code>
+                            </div>
+                        </div>
+
+                        <div class="step animate-on-scroll">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h3>Commit & Push</h3>
+                                <p>
+                                    Stage your changes, write a descriptive
+                                    commit message, and push.
+                                </p>
+                                <code
+                                    >git add . && git commit -m "Add: [Name]
+                                    portfolio" && git push</code
+                                >
+                            </div>
+                        </div>
+
+                        <div class="step animate-on-scroll">
+                            <div class="step-number">6</div>
+                            <div class="step-content">
+                                <h3>Open a Pull Request</h3>
+                                <p>
+                                    Create a PR on GitHub and request a code
+                                    review from a teammate.
+                                </p>
+                                <code
+                                    >gh pr create --title "Add: [Name]
+                                    portfolio"</code
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-logo">eight<span>fold</span></div>
+                        <p class="footer-text">
+                            A Git training exercise for collaborative
+                            learning.<br />
+                            Break things. Ask questions. Have fun.
+                        </p>
+                        <div class="footer-command">
+                            <span>$</span> python start-server.py
+                        </div>
+                        <div class="footer-links">
+                            <a href="README.md" class="footer-link"
+                                >Documentation</a
+                            >
+                            <a href="portfolios/template/" class="footer-link"
+                                >Template</a
+                            >
+                            <a
+                                href="https://github.com/bxbmedia/eightfold"
+                                class="footer-link"
+                                target="_blank"
+                                >GitHub</a
+                            >
+                        </div>
+                        <p class="footer-copyright">
+                            Built for learning. © 2024
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script>
+            // Navigation scroll effect
+            const nav = document.getElementById("nav");
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add("scrolled");
+                } else {
+                    nav.classList.remove("scrolled");
+                }
+            });
+
+            // Scroll animations with Intersection Observer
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px",
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all animated elements
+            document
+                .querySelectorAll(".animate-on-scroll, .card")
+                .forEach((el) => {
+                    observer.observe(el);
+                });
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(
+                        this.getAttribute("href"),
+                    );
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                        });
+                    }
+                });
+            });
+
+            // Parallax effect on orbs
+            let ticking = false;
+            window.addEventListener("scroll", () => {
+                if (!ticking) {
+                    window.requestAnimationFrame(() => {
+                        const scrolled = window.pageYOffset;
+                        const orbs = document.querySelectorAll(".orb");
+                        orbs.forEach((orb, index) => {
+                            const speed = (index + 1) * 0.1;
+                            orb.style.transform = `translateY(${scrolled * speed}px)`;
+                        });
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+        </script>
+    </body>
+</html>
