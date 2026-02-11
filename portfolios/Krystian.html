@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>[Your Name] — eightfold</title>
+        <title>Krystian — eightfold</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -11,7 +11,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="../../css/styles.css" />
-        <link rel="stylesheet" href="../../css/portfolio.css" />
+        <link rel="stylesheet" href="../../css/portfolio-krystian.css" />
     </head>
     <body>
         <div class="portfolio-page">
@@ -63,14 +63,10 @@
                 <!-- Header -->
                 <header class="portfolio-header">
                     <div class="portfolio-avatar">
-                        <span class="portfolio-avatar-icon">[X]</span>
-                        <!-- Or use an image: <img src="your-avatar.jpg" alt="Your Name"> -->
+                        <img src="/assets/volt.jpg" alt="Krystian's Avatar" />
                     </div>
-                    <h1 class="portfolio-name">[Your Name]</h1>
-                    <p class="portfolio-tagline">
-                        [Your role or tagline — e.g., "Full-stack developer
-                        passionate about clean code"]
-                    </p>
+                    <h1 class="portfolio-name">Volt Electric - Payload</h1>
+                    <p class="portfolio-tagline">Krystian</p>
                 </header>
 
                 <!-- Project Overview -->
@@ -82,17 +78,14 @@
                         </div>
                         <div class="section-content">
                             <p>
-                                [Describe your demo project in 2-3 paragraphs.
-                                What does it do? Who is it for? What problem
-                                does it solve?]
+                                In the Payload CMS conversion, this became a
+                                Next.js + Payload monorepo where the marketing
+                                site and CMS admin live in one deployment. Had
+                                to let go of the flash and motion and
+                                concentrate instead on the data being correct.
                             </p>
-                            <p>
-                                [Add more details about the key features or what
-                                makes your project interesting.]
-                            </p>
-
                             <a
-                                href="[YOUR-REPO-URL]"
+                                href="https://github.com/Sonophage/Payload-Main"
                                 class="project-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -110,7 +103,7 @@
                                         d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
                                     />
                                 </svg>
-                                View on GitHub
+                                View Project on GitHub
                             </a>
                         </div>
                     </div>
@@ -124,12 +117,6 @@
                             <h2 class="section-title">README</h2>
                         </div>
                         <div class="section-content">
-                            <p>
-                                [Summarize or paste your demo project's README
-                                content here. Include setup instructions, usage
-                                examples, etc.]
-                            </p>
-
                             <div class="code-wrapper">
                                 <div class="code-filename">
                                     <div class="dots">
@@ -141,28 +128,50 @@
                                 </div>
                                 <div class="code-block">
                                     <pre><code># [Project Name]
+    ## Project Structure
 
-[Your README content here]
-
-## Installation
-
-```bash
-# Clone the repo
-git clone [your-repo-url]
-
-# Install dependencies
-[your install command]
-
-# Run the project
-[your run command]
-```
-
-## Usage
-
-[How to use your project]
+    ```
+    /src
+    ├── App.jsx                    # Main layout
+    ├── main.jsx                   # Entry point
+    ├── index.css                  # Tailwind config & custom utilities
+    └── components/
+        ├── layout/
+        │   ├── Header.jsx
+        │   └── Footer.jsx
+        ├── sections/
+        │   ├── Hero.jsx
+        │   ├── Services.jsx       # Includes BeforeAfterSlider
+        │   ├── ValueProp.jsx
+        │   ├── ServiceArea.jsx
+        │   └── BookingForm.jsx
+        └── ui/
+            └── Motion.jsx         # Reusable animation components
+    ```
 </code></pre>
                                 </div>
                             </div>
+                            <a
+                                href="https://github.com/Sonophage/Payload-Main/blob/main/README.md"
+                                class="project-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                    />
+                                </svg>
+                                View README on GitHub
+                            </a>
                         </div>
                     </div>
                 </section>
@@ -177,13 +186,6 @@ git clone [your-repo-url]
                             </h2>
                         </div>
                         <div class="section-content">
-                            <p>
-                                [Explain what context you provided to AI tools
-                                while building this project. What was in your
-                                claude.md file? Why did you structure it that
-                                way? What worked well?]
-                            </p>
-
                             <div class="code-wrapper">
                                 <div class="code-filename">
                                     <div class="dots">
@@ -194,19 +196,55 @@ git clone [your-repo-url]
                                     claude.md
                                 </div>
                                 <div class="code-block">
-                                    <pre><code>[Paste your claude.md content here, or summarize the key sections]
+                                    <pre><code>
+    # Product Requirements Document (PRD)
 
-# Project Context
-[What you told the AI about your project]
+    ## Project Title
 
-# Code Style Preferences
-[Any preferences you specified]
+    Volt Electric Vehicle Detailing – Marketing Landing Page
 
-# Key Files
-[Important files you pointed out]
+    ## Author
+
+    Krystian Molina
+
+    ## Purpose
+
+    This PRD defines the requirements for building a single-page marketing landing page for a fictional mobile electric vehicle (EV) detailing business. The document is intended to be used by an AI collaborator (e.g., Claude) to guide design, development, and iteration within a short, exploratory build window.
+
+    The goal is not perfection, but rapid experimentation, learning effective AI collaboration patterns, and producing a polished, functional prototype.
+
+    ---
+
+    ## Background & Context
+
+    Volt is a mobile vehicle detailing service specializing exclusively in electric vehicles. The brand emphasizes modern aesthetics, EV-safe products, and a waterless wash technique. Customers are tech-savvy EV owners (primarily Tesla drivers) who are likely browsing on mobile devices, sometimes directly from their cars.
+
+    This project is a sandbox exercise with an approximate build time of one hour.
+
 </code></pre>
                                 </div>
                             </div>
+                            <a
+                                href="https://github.com/Sonophage/Payload-Main/blob/main/AGENTS.md"
+                                class="project-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                    />
+                                </svg>
+                                View AI Context on GitHub
+                            </a>
                         </div>
                     </div>
                 </section>
@@ -219,19 +257,16 @@ git clone [your-repo-url]
                             <h2 class="section-title">Tech Stack</h2>
                         </div>
                         <div class="section-content">
-                            <p>
-                                [Briefly explain your technology choices and why
-                                you picked them.]
-                            </p>
-
                             <div class="tech-stack">
                                 <!-- Replace these with your actual technologies -->
-                                <span class="tech-tag">[Technology 1]</span>
-                                <span class="tech-tag">[Technology 2]</span>
-                                <span class="tech-tag">[Technology 3]</span>
-                                <span class="tech-tag"
-                                    >[Add more as needed]</span
-                                >
+                                <span class="tech-tag">Next.JS</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">shadcn/ui</span>
+                                <span class="tech-tag">React Hook Form</span>
+                                <span class="tech-tag">Payload Admin Bar</span>
+                                <span class="tech-tag">Podman</span>
+                                <span class="tech-tag">Vite</span>
+                                <span class="tech-tag">Kimi K2 and Claude</span>
                             </div>
                         </div>
                     </div>
@@ -247,14 +282,15 @@ git clone [your-repo-url]
                         <div class="section-content">
                             <div class="reflection-content">
                                 <p>
-                                    [What did you learn building this demo? What
-                                    was challenging? What would you do
-                                    differently? What are you most proud of?]
-                                </p>
-                                <p>
-                                    [This is your space to reflect on the
-                                    experience. Be honest about both successes
-                                    and struggles.]
+                                    "AI made me 3-4x faster on the mechanical
+                                    work and let me focus on architecture and
+                                    business logic. But if I didn't already
+                                    understand React, data modeling, and
+                                    deployment infrastructure, the AI output
+                                    would have been a black box I couldn't
+                                    debug. The conversion taught me that AI is a
+                                    force multiplier on existing skill — not a
+                                    replacement for it."
                                 </p>
                             </div>
                         </div>
