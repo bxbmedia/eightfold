@@ -56,6 +56,17 @@
                     Eight developers. Eight portfolios. One repository.<br />
                     Master Git through collaborative learning.
                 </p>
+                <div class="hero-video">
+                    <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/Ala6PHlYjmw"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                    ></iframe>
+                </div>
                 <div class="hero-cta">
                     <a href="#team" class="btn btn-primary"> Meet the Team </a>
                     <a href="#workflow" class="btn btn-secondary">
@@ -272,10 +283,46 @@
                         <div class="step animate-on-scroll">
                             <div class="step-number">1</div>
                             <div class="step-content">
+                                <h3>Clone the Repository</h3>
+                                <p>
+                                    Open your terminal and clone the project
+                                    to your local machine. This downloads a
+                                    full copy of the repository.
+                                </p>
+                                <code
+                                    >git clone
+                                    https://github.com/bxbmedia/eightfold.git</code
+                                >
+                                <p>
+                                    Then navigate into the project folder.
+                                </p>
+                                <code>cd eightfold</code>
+                            </div>
+                        </div>
+
+                        <div class="step animate-on-scroll">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Pull the Latest Changes</h3>
+                                <p>
+                                    Before starting any work, make sure you
+                                    have the most up-to-date version of the
+                                    project. Run this anytime you want to
+                                    sync with what others have pushed.
+                                </p>
+                                <code>git pull origin main</code>
+                            </div>
+                        </div>
+
+                        <div class="step animate-on-scroll">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
                                 <h3>Create Your Branch</h3>
                                 <p>
-                                    Start by creating a new feature branch for
-                                    your portfolio.
+                                    Create a new branch for your work. This
+                                    keeps your changes separate from
+                                    everyone else's until you're ready to
+                                    merge.
                                 </p>
                                 <code
                                     >git checkout -b
@@ -285,54 +332,60 @@
                         </div>
 
                         <div class="step animate-on-scroll">
-                            <div class="step-number">2</div>
+                            <div class="step-number">4</div>
                             <div class="step-content">
                                 <h3>Copy the Template</h3>
                                 <p>
-                                    Duplicate the template folder and rename it
-                                    with your name.
+                                    In your IDE (VS Code, Cursor, etc.),
+                                    find the <strong>portfolios/template</strong>
+                                    folder in the file explorer. Right-click
+                                    it, copy it, and paste it inside the
+                                    <strong>portfolios/</strong> directory.
+                                    Rename the copied folder to your first
+                                    name (e.g.
+                                    <strong>portfolios/jordan</strong>).
                                 </p>
-                                <code
-                                    >cp -r portfolios/template
-                                    portfolios/[your-name]</code
-                                >
-                            </div>
-                        </div>
-
-                        <div class="step animate-on-scroll">
-                            <div class="step-number">3</div>
-                            <div class="step-content">
-                                <h3>Build Your Portfolio</h3>
-                                <p>
-                                    Fill in your project details, README
-                                    content, tech stack, and reflections.
-                                </p>
-                                <code
-                                    >Edit
-                                    portfolios/[your-name]/index.html</code
-                                >
-                            </div>
-                        </div>
-
-                        <div class="step animate-on-scroll">
-                            <div class="step-number">4</div>
-                            <div class="step-content">
-                                <h3>Update the Homepage</h3>
-                                <p>
-                                    Find your card on this page and update it
-                                    with your info and link.
-                                </p>
-                                <code>Edit index.html</code>
                             </div>
                         </div>
 
                         <div class="step animate-on-scroll">
                             <div class="step-number">5</div>
                             <div class="step-content">
+                                <h3>Build Your Portfolio</h3>
+                                <p>
+                                    This is your page — you have full
+                                    creative control. Open
+                                    <strong>portfolios/[your-name]/index.html</strong>
+                                    and make it your own. Fill in your
+                                    project details, add your tech stack,
+                                    write your reflections, and customize
+                                    the styling however you like.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="step animate-on-scroll">
+                            <div class="step-number">6</div>
+                            <div class="step-content">
+                                <h3>Update the Homepage</h3>
+                                <p>
+                                    Open the root
+                                    <strong>index.html</strong> file and
+                                    find your card in the Team section.
+                                    Update your tagline and change the link
+                                    to point to your portfolio folder.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="step animate-on-scroll">
+                            <div class="step-number">7</div>
+                            <div class="step-content">
                                 <h3>Commit & Push</h3>
                                 <p>
-                                    Stage your changes, write a descriptive
-                                    commit message, and push.
+                                    Stage all your changes, write a clear
+                                    commit message describing what you did,
+                                    and push your branch to GitHub.
                                 </p>
                                 <code
                                     >git add . && git commit -m "Add: [Name]
@@ -342,12 +395,14 @@
                         </div>
 
                         <div class="step animate-on-scroll">
-                            <div class="step-number">6</div>
+                            <div class="step-number">8</div>
                             <div class="step-content">
                                 <h3>Open a Pull Request</h3>
                                 <p>
-                                    Create a PR on GitHub and request a code
-                                    review from a teammate.
+                                    Go to the repository on GitHub and open
+                                    a Pull Request to merge your branch into
+                                    main. Request a code review from a
+                                    teammate.
                                 </p>
                                 <code
                                     >gh pr create --title "Add: [Name]
