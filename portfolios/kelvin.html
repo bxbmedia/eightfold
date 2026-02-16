@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kelvin — eightfold</title>
+        <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../css/styles.css" />
+        <link rel="stylesheet" href="../css/portfolio.css" />
+    </head>
+    <body>
+        <div class="portfolio-page">
+            <!-- Animated Background -->
+            <div class="background-glow"></div>
+            <div class="background-grid"></div>
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+
+            <!-- Progress Bar -->
+            <div class="progress-bar" id="progress"></div>
+
+            <!-- Table of Contents -->
+            <nav class="toc">
+                <ul class="toc-list">
+                    <li>
+                        <a href="#overview" class="toc-link active">Overview</a>
+                    </li>
+                    <li><a href="#readme" class="toc-link">README</a></li>
+                    <li>
+                        <a href="#ai-context" class="toc-link">AI Context</a>
+                    </li>
+                    <li>
+                        <a href="#tech-stack" class="toc-link">Tech Stack</a>
+                    </li>
+                    <li>
+                        <a href="#reflection" class="toc-link">Reflection</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="portfolio-container">
+                <!-- Back Navigation -->
+                <a href="../index.html" class="back-link">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    Back to Team
+                </a>
+
+                <!-- Header -->
+                <header class="portfolio-header">
+                    <div class="portfolio-avatar">
+                        <img src="../assets/kelvin.png" alt="Kelvin's Avatar" />
+                    </div>
+                    <h1 class="portfolio-name">Driftwood Surf School</h1>
+                    <p class="portfolio-tagline">
+                        Kelvin — Full-stack surf school site built with Payload CMS &amp; Next.js
+                    </p>
+                </header>
+
+                <!-- Project Overview -->
+                <section class="portfolio-section" id="overview">
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-icon">🚀</div>
+                            <h2 class="section-title">Project Overview</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                Driftwood Surf School has been the premier
+                                surf destination on the coast since 1998.
+                                This project is a full-stack website that
+                                lets visitors browse lessons, check live
+                                surf conditions, meet the instructor crew,
+                                and book sessions online — all powered by
+                                a headless CMS so the school can manage
+                                their own content.
+                            </p>
+                            <p>
+                                The site uses a modular block-based layout
+                                system built on Payload CMS. Each page is
+                                assembled from reusable content blocks —
+                                hero sections, lesson cards, instructor
+                                grids, booking forms, live conditions
+                                widgets, and FAQs. This lets the school
+                                rearrange their pages without touching code.
+                            </p>
+
+                            <a
+                                href="https://github.com/kelvinlacsamanabxbmedia/driftwood-surf-school"
+                                class="project-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                    />
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- README Content -->
+                <section class="portfolio-section" id="readme">
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-icon">📋</div>
+                            <h2 class="section-title">README</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                The site supports lesson browsing with
+                                tiered pricing (group $75, private $120,
+                                week-long camps $550), real-time surf
+                                conditions, instructor profiles, and an
+                                integrated booking form.
+                            </p>
+
+                            <div class="code-wrapper">
+                                <div class="code-filename">
+                                    <div class="dots">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    README.md
+                                </div>
+                                <div class="code-block">
+                                    <pre><code># Driftwood Surf School
+
+A website built with Payload CMS 3.0 and Next.js 15.
+
+## Getting Started
+
+```bash
+git clone https://github.com/kelvinlacsamanabxbmedia/driftwood-surf-school.git
+cd driftwood-surf-school
+cp .env.example .env
+pnpm install &amp;&amp; pnpm dev
+```
+
+Open http://localhost:3000 in your browser.
+Admin panel at http://localhost:3000/admin
+
+## Content Blocks
+- Hero — Banner sections
+- LessonCards — Surf lesson offerings with pricing
+- InstructorGrid — Crew profiles
+- BookingForm — Online session booking
+- LiveConditions — Real-time swell, wind &amp; tide data
+- OurStory — School history
+- FAQ — Common questions
+
+## Scripts
+| pnpm dev        | Start dev server          |
+| pnpm build      | Build for production      |
+| pnpm test       | Run all tests             |
+| pnpm test:int   | Integration tests (Vitest)|
+| pnpm test:e2e   | E2E tests (Playwright)    |
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- AI Context -->
+                <section class="portfolio-section" id="ai-context">
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-icon">🤖</div>
+                            <h2 class="section-title">
+                                AI Context (claude.md)
+                            </h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                The project uses an AGENTS.md file with
+                                Payload CMS development rules — TypeScript-first
+                                patterns, collection configuration, access
+                                control, hooks, and admin panel customization.
+                                Having these constraints written down meant
+                                AI suggestions stayed consistent with the
+                                Payload way of doing things instead of
+                                generating generic Next.js code.
+                            </p>
+
+                            <div class="code-wrapper">
+                                <div class="code-filename">
+                                    <div class="dots">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    AGENTS.md
+                                </div>
+                                <div class="code-block">
+                                    <pre><code># Payload CMS Development Rules
+
+## Core Principles
+- TypeScript-first development
+- Follow Payload CMS 3.x patterns strictly
+- Use Local API for server-side data access
+
+## Project Structure
+src/
+  ├── collections/     # Payload collections (Users, Media, Pages)
+  ├── blocks/          # Content blocks (Hero, LessonCards, etc.)
+  ├── app/             # Next.js App Router pages
+  └── seed.ts          # Database seeding script
+
+## Critical Patterns
+- Access control on every collection
+- Transaction safety for database operations
+- Lexical editor for rich text fields
+- Block-based page layouts for content flexibility
+
+## Security
+- Validate all user input at the collection level
+- Use Payload's built-in auth for admin access
+- Never expose internal API routes publicly
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tech Stack -->
+                <section class="portfolio-section" id="tech-stack">
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-icon">🛠️</div>
+                            <h2 class="section-title">Tech Stack</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                Chose Payload CMS for its tight Next.js
+                                integration — the admin panel and marketing
+                                site deploy as a single app. MongoDB gives
+                                flexibility for the block-based content
+                                model, and Tailwind keeps styling fast.
+                            </p>
+
+                            <div class="tech-stack">
+                                <span class="tech-tag">Payload CMS 3</span>
+                                <span class="tech-tag">Next.js 15</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Tailwind CSS 4</span>
+                                <span class="tech-tag">Lexical Editor</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Vitest</span>
+                                <span class="tech-tag">Playwright</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Reflection -->
+                <section class="portfolio-section" id="reflection">
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-icon">💡</div>
+                            <h2 class="section-title">Reflection</h2>
+                        </div>
+                        <div class="section-content">
+                            <div class="reflection-content">
+                                <p>
+                                    The biggest challenge was learning Payload
+                                    CMS's block system. Once it clicked, it
+                                    became the best part of the project — the
+                                    school can rearrange entire page layouts
+                                    from the admin panel without a developer.
+                                    Thinking in reusable content blocks
+                                    changed how I approach frontend
+                                    architecture.
+                                </p>
+                                <p>
+                                    Working with a real tech stack (Next.js
+                                    App Router, MongoDB, TypeScript) made
+                                    the Git workflow feel natural. Branching
+                                    for each feature, writing tests with
+                                    Vitest and Playwright, and opening PRs
+                                    became second nature. The merge conflicts
+                                    on index.html during the eightfold
+                                    exercise were easy after dealing with
+                                    real config file conflicts in a full-stack
+                                    app.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer class="portfolio-footer">
+                    <p>
+                        Part of the
+                        <a href="../index.html">eightfold</a> training
+                        project
+                    </p>
+                </footer>
+            </div>
+        </div>
+
+        <script>
+            // Progress bar
+            const progressBar = document.getElementById("progress");
+            window.addEventListener("scroll", () => {
+                const windowHeight =
+                    document.documentElement.scrollHeight - window.innerHeight;
+                const progress = window.scrollY / windowHeight;
+                progressBar.style.transform = `scaleX(${progress})`;
+            });
+
+            // Scroll animations with Intersection Observer
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -100px 0px",
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, observerOptions);
+
+            document
+                .querySelectorAll(".portfolio-section")
+                .forEach((section) => {
+                    observer.observe(section);
+                });
+
+            // Table of Contents active state
+            const tocLinks = document.querySelectorAll(".toc-link");
+            const sections = document.querySelectorAll(".portfolio-section");
+
+            const tocObserver = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            tocLinks.forEach((link) =>
+                                link.classList.remove("active"),
+                            );
+                            const activeLink = document.querySelector(
+                                `.toc-link[href="#${entry.target.id}"]`,
+                            );
+                            if (activeLink) activeLink.classList.add("active");
+                        }
+                    });
+                },
+                { threshold: 0.5 },
+            );
+
+            sections.forEach((section) => tocObserver.observe(section));
+
+            // Smooth scroll for TOC links
+            tocLinks.forEach((link) => {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const target = document.querySelector(
+                        link.getAttribute("href"),
+                    );
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                        });
+                    }
+                });
+            });
+
+            // Parallax effect on orbs
+            let ticking = false;
+            window.addEventListener("scroll", () => {
+                if (!ticking) {
+                    window.requestAnimationFrame(() => {
+                        const scrolled = window.pageYOffset;
+                        const orbs = document.querySelectorAll(".orb");
+                        orbs.forEach((orb, index) => {
+                            const speed = (index + 1) * 0.05;
+                            orb.style.transform = `translateY(${scrolled * speed}px)`;
+                        });
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+        </script>
+    </body>
+</html>
