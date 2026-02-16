@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>[Your Name] — eightfold</title>
+        <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../../css/styles.css" />
+        <link rel="stylesheet" href="../../css/portfolio.css" />
+    </head>
+    <body>
+        <div class="portfolio-page">
+            <!-- Animated Background -->
+            <div class="background-glow"></div>
+            <div class="background-grid"></div>
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+
+            <!-- Progress Bar -->
+            <div class="progress-bar" id="progress"></div>
+
+            <!-- Table of Contents -->
+            <nav class="toc">
+                <ul class="toc-list">
+                    <li>
+                        <a href="#overview" class="toc-link active">Overview</a>
+                    </li>
+                    <li><a href="#readme" class="toc-link">README</a></li>
+                    <li>
+                        <a href="#ai-context" class="toc-link">AI Context</a>
+                    </li>
+                    <li>
+                        <a href="#tech-stack" class="toc-link">Tech Stack</a>
+                    </li>
+                    <li>
+                        <a href="#reflection" class="toc-link">Reflection</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="portfolio-container">
+                <!-- Back Navigation -->
+                <a href="../../index.html" class="back-link">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    Back to Team
+                </a>
+
+                <!-- Header -->
+                <header class="portfolio-header">
+                    <div class="portfolio-avatar">
+                        <img src="../assets/bailey-avatar.png" alt="Bailey">
+                    </div>
+                    <h1 class="portfolio-name">Bailey</h1>
+                    <p class="portfolio-tagline">
+                        Internal Developer — Building universes in code, one line at a time
+                    </p>
+                </header>
+
+                <!-- Project Overview -->
+                <section class="portfolio-section" id="overview">
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-icon">🚀</div>
+                            <h2 class="section-title">Project Overview</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                Heroes & Wizards Online is a fan-made, non-commercial web application that brings the beloved card game 
+                                Heroes & Wizards to the browser. Built with React and Next.js, this project supports 2-5 players in both 
+                                local hot-seat mode and online multiplayer with real-time synchronization powered by Supabase.
+                            </p>
+                            <p>
+                                The game features a complete implementation of the original card game mechanics, including 72 unique cards, 
+                                full event handling, party management, and multiplayer lobby system. Players can create or join lobbies using 
+                                shareable codes and experience the full Heroes & Wizards gameplay from anywhere in the world.
+                            </p>
+
+                            <img src="../assets/heroes-wizards-screenshot.png" alt="Heroes & Wizards Online Game Screenshot" style="width: 100%; max-width: 800px; border-radius: 12px; margin: 1.5rem 0; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);">
+
+                            <a
+                                href="https://github.com/killianconsulting/heroes-wizards-online"
+                                class="project-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                    />
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- README Content -->
+                <section class="portfolio-section" id="readme">
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-icon">📋</div>
+                            <h2 class="section-title">README</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                The Heroes & Wizards Online project includes comprehensive documentation for setup, deployment, 
+                                and gameplay. The README provides clear instructions for getting started with both local 
+                                development and online multiplayer setup with Supabase.
+                            </p>
+
+                            <div class="code-wrapper">
+                                <div class="code-filename">
+                                    <div class="dots">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    README.md
+                                </div>
+                                <div class="code-block">
+                                    <pre><code># Heroes & Wizards (digital fan version)
+
+A **fan-made**, **non-commercial** web app to play the card game **Heroes & Wizards** in the browser. 
+You can play it online at **heroesandwizards.online**. Built with React and Next.js. Supports **2–5 players** 
+in local hot-seat play (same device) or **online multiplayer** (create/join lobbies with real-time sync via Supabase).
+
+## Play online
+
+Go to **https://www.heroesandwizards.online/** and open a new lobby. Use the lobby code or share the link 
+to invite friends—you can play with 2–5 players. The site has full rules and instructions for first-time players.
+
+## Setup
+
+1. **Install dependencies**
+   npm install
+
+2. **Card images**
+   Copy the contents of the `cards/` folder (if you have it) into `public/cards/` so the app can serve them 
+   at `/cards/...`. If `public/cards/` is empty, card images will be missing but the game engine will still run.
+
+3. **Supabase setup (for online multiplayer)**
+   - See `SUPABASE_SETUP.md` for detailed instructions
+   - Create a Supabase project, set up tables, and add env vars to `.env.local`
+   - Without Supabase: local/hot-seat mode only (one device, multiple players)
+   - With Supabase: full online multiplayer (create/join lobbies, real-time sync)
+
+4. **Run development server**
+   npm run dev
+   Open http://localhost:3000
+
+5. **Run tests** (currently broken—Jest dependencies issue)
+   npm test
+
+## Project structure
+
+- `src/data/` — Card definitions (72 cards), types, constants
+- `src/engine/` — Game state, setup, validation, actions, event resolvers
+- `src/lib/` — Multiplayer infrastructure (Supabase client, lobby operations, game sync)
+- `src/app/` — Next.js App Router (layout, game wrapper, How to Play, Disclaimer, cron cleanup)
+- `src/components/` — UI components
+- `tests/engine/` — Unit tests for the engine
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- AI Context -->
+                <section class="portfolio-section" id="ai-context">
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-icon">🤖</div>
+                            <h2 class="section-title">
+                                AI Context (claude.md)
+                            </h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                Effective AI collaboration requires clear, structured context. The CLAUDE.md file served as a 
+                                comprehensive reference that outlined the project architecture, conventions, and key patterns. 
+                                By documenting the engine/UI separation, state management approach, and coding standards upfront, 
+                                Claude could generate code that consistently matched the project's patterns and avoided common pitfalls.
+                            </p>
+                            <p>
+                                This structured approach significantly improved development velocity. Instead of repeatedly explaining 
+                                the same architectural decisions, the AI could reference the documented patterns and maintain consistency 
+                                across the codebase. The result was cleaner suggestions, fewer corrections, and better integration with 
+                                existing code.
+                            </p>
+
+                            <div class="code-wrapper">
+                                <div class="code-filename">
+                                    <div class="dots">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    CLAUDE.md
+                                </div>
+                                <div class="code-block">
+                                    <pre><code># CLAUDE.md
+
+This file provides guidance to Claude Code when working with code in this repository.
+
+## Project Overview
+
+Heroes & Wizards is a fan-made web app for playing the card game "Heroes & Wizards" in the browser. 
+Supports local hot-seat play (2-5 players, same device) and online multiplayer via Supabase Realtime.
+
+## Commands
+
+```bash
+npm run dev        # Start dev server at localhost:3000
+npm run build      # Production build
+npm run lint       # ESLint
+npm test           # Jest (tests in tests/engine/)
+npm run test:watch # Jest watch mode
+```
+
+## Architecture
+
+### Engine/UI Separation
+
+The core pattern: **pure game logic in `src/engine/`** is completely decoupled from React. 
+Engine functions are pure transformations: `(state) → newState`. Never mutate state — always 
+return new objects via spread/map/filter.
+
+- `src/engine/state.ts` — `GameState`, `Player`, `Party` types
+- `src/engine/setup.ts` — `createGame()`, deck shuffling
+- `src/engine/validation.ts` — `getLegalActions()`, `canPlayQuest()`
+- `src/engine/actions.ts` — `drawCard`, `playCard`, `dumpCard`, `passTurn`
+- `src/engine/events.ts` — event card resolution (steal, swap, feast, etc.)
+
+### State Management
+
+- **Local play:** `src/hooks/useGameState.ts` hook wraps engine calls in React state
+- **Online play:** Three React contexts in `src/context/`:
+  - `LobbyContext` — lobby creation/joining, player list sync
+  - `OnlineGameContext` — host-authoritative game sync
+  - `LeaveGameContext` — leave game confirmation
+
+### Multiplayer (Supabase Realtime)
+
+Host-authoritative model in `src/lib/gameSync.ts`:
+- Host applies actions locally and broadcasts state
+- Clients send action requests, wait for host broadcast
+- Channel: `game:{lobbyId}` broadcast
+- Features: host migration, disconnect detection, session reconnection
+
+## Conventions
+
+- **Imports:** Use `@/*` path alias for all `src/` imports
+- **Components:** PascalCase files. Props use explicit interfaces.
+- **Utils/lib:** camelCase files
+- **Strict TypeScript** — no `any` in engine code, type guards for card discrimination
+- **Engine functions never throw** — return unchanged state on invalid input
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tech Stack -->
+                <section class="portfolio-section" id="tech-stack">
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-icon">🛠️</div>
+                            <h2 class="section-title">Tech Stack</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                This project leverages modern development tools and platforms to streamline the build process 
+                                and deliver a seamless multiplayer experience. From AI-powered development to cloud infrastructure, 
+                                each tool was chosen to maximize productivity and performance.
+                            </p>
+
+                            <div class="tech-stack">
+                                <span class="tech-tag">Cursor AI</span>
+                                <span class="tech-tag">Claude Code</span>
+                                <span class="tech-tag">SuperWhisper</span>
+                                <span class="tech-tag">Vercel</span>
+                                <span class="tech-tag">Supabase</span>
+                                <span class="tech-tag">GitHub</span>
+                                <span class="tech-tag">Termius</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">TypeScript</span>
+                            </div>
+
+                            <h3 style="margin-top: 2rem; margin-bottom: 1rem; font-size: 1.25rem;">Development Tools</h3>
+                            <p>
+                                <strong>Cursor AI</strong> served as the primary code editor, providing AI-powered code completion 
+                                and intelligent suggestions that accelerated development significantly.
+                            </p>
+                            <p>
+                                <strong>Claude Code</strong> acted as an AI coding assistant for problem-solving, architecture decisions, 
+                                and code generation, helping tackle complex game logic and state management.
+                            </p>
+                            <p>
+                                <strong>SuperWhisper</strong> enabled voice-to-text input for faster documentation writing and 
+                                code comments, streamlining the development workflow.
+                            </p>
+
+                            <h3 style="margin-top: 2rem; margin-bottom: 1rem; font-size: 1.25rem;">Infrastructure & Deployment</h3>
+                            <p>
+                                <strong>Vercel</strong> provides seamless hosting and deployment for the Next.js application with 
+                                automatic builds and zero-config deployments.
+                            </p>
+                            <p>
+                                <strong>Supabase</strong> powers the real-time multiplayer functionality with PostgreSQL database, 
+                                real-time subscriptions, and lobby management—all without managing backend infrastructure.
+                            </p>
+                            <p>
+                                <strong>GitHub</strong> serves as the version control system and repository host, enabling collaborative 
+                                development and deployment automation.
+                            </p>
+                            <p>
+                                <strong>Termius</strong> was used as an SSH client for server management and deployment tasks when 
+                                direct terminal access was needed.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Reflection -->
+                <section class="portfolio-section" id="reflection">
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-icon">💡</div>
+                            <h2 class="section-title">Reflection</h2>
+                        </div>
+                        <div class="section-content">
+                            <div class="reflection-content">
+                                <p>
+                                    Building Heroes & Wizards Online taught me that complex systems become manageable when you 
+                                    break them into clear, testable components. The game engine required careful state management 
+                                    and event handling—ensuring every card interaction worked correctly across multiplayer sessions 
+                                    was challenging but rewarding. Working with real-time synchronization through Supabase deepened 
+                                    my understanding of distributed systems and the importance of optimistic UI updates.
+                                </p>
+                                <p>
+                                    The most valuable lesson was learning to leverage AI tools effectively. Cursor and Claude didn't 
+                                    just speed up development—they changed how I approach problems. Instead of getting stuck on 
+                                    implementation details, I could focus on architecture and user experience. If I were to start over, 
+                                    I'd invest more time upfront in the type system and data validation to catch edge cases earlier. 
+                                    What I'm most proud of is creating a fully functional multiplayer experience that real people can 
+                                    enjoy together, bringing a physical card game to life in the browser.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer class="portfolio-footer">
+                    <p>
+                        Part of the
+                        <a href="../../index.html">eightfold</a> training
+                        project
+                    </p>
+                </footer>
+            </div>
+        </div>
+
+        <script>
+            // Progress bar
+            const progressBar = document.getElementById("progress");
+            window.addEventListener("scroll", () => {
+                const windowHeight =
+                    document.documentElement.scrollHeight - window.innerHeight;
+                const progress = window.scrollY / windowHeight;
+                progressBar.style.transform = `scaleX(${progress})`;
+            });
+
+            // Scroll animations with Intersection Observer
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -100px 0px",
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, observerOptions);
+
+            document
+                .querySelectorAll(".portfolio-section")
+                .forEach((section) => {
+                    observer.observe(section);
+                });
+
+            // Table of Contents active state
+            const tocLinks = document.querySelectorAll(".toc-link");
+            const sections = document.querySelectorAll(".portfolio-section");
+
+            const tocObserver = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            tocLinks.forEach((link) =>
+                                link.classList.remove("active"),
+                            );
+                            const activeLink = document.querySelector(
+                                `.toc-link[href="#${entry.target.id}"]`,
+                            );
+                            if (activeLink) activeLink.classList.add("active");
+                        }
+                    });
+                },
+                { threshold: 0.5 },
+            );
+
+            sections.forEach((section) => tocObserver.observe(section));
+
+            // Smooth scroll for TOC links
+            tocLinks.forEach((link) => {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const target = document.querySelector(
+                        link.getAttribute("href"),
+                    );
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                        });
+                    }
+                });
+            });
+
+            // Parallax effect on orbs
+            let ticking = false;
+            window.addEventListener("scroll", () => {
+                if (!ticking) {
+                    window.requestAnimationFrame(() => {
+                        const scrolled = window.pageYOffset;
+                        const orbs = document.querySelectorAll(".orb");
+                        orbs.forEach((orb, index) => {
+                            const speed = (index + 1) * 0.05;
+                            orb.style.transform = `translateY(${scrolled * speed}px)`;
+                        });
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+        </script>
+    </body>
+</html>
