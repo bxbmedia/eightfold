@@ -35,34 +35,3 @@ Prefer conventional commits:
 3. Write descriptive commit message
 4. Commit: `git commit -m "message"`
 5. Push if needed: `git push`
-
-## Moonfall-Specific Workflow
-
-For the Moonfall project (located at `moonfall/moonfall-dev/` and `moonfall/moonfall-main/`):
-
-**Structure:**
-- `moonfall/moonfall-main/` → Tracks `main` branch (live/production site)
-- `moonfall/moonfall-dev/` → Tracks `dev` branch (development/production pipeline)
-
-**Commit Workflow:**
-```bash
-# 1. Always work in moonfall-dev
-cd moonfall/moonfall-dev
-
-# 2. Make changes, then commit and push to dev branch
-git add -A
-git commit -m "feat: description"
-git push origin dev
-
-# 3. Create PR (dev → main) - see gh-pr skill
-
-# 4. After PR is merged, update main folder
-cd ../moonfall-main
-git pull origin main
-```
-
-**Important:** Never commit directly to `moonfall/moonfall-main/`. It should only receive updates via `git pull` after PRs are merged.
-
-## Scripts
-
-- `scripts/commit-with-scope.py` - Interactive commit with scope selection
