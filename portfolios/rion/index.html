@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rion Nunez — eightfold</title>
+        <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../../css/styles.css" />
+        <link rel="stylesheet" href="../../css/portfolio.css" />
+    </head>
+    <body>
+        <div class="portfolio-page">
+            <!-- Animated Background -->
+            <div class="background-glow"></div>
+            <div class="background-grid"></div>
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+
+            <!-- Progress Bar -->
+            <div class="progress-bar" id="progress"></div>
+
+            <!-- Table of Contents -->
+            <nav class="toc">
+                <ul class="toc-list">
+                    <li>
+                        <a href="#overview" class="toc-link active">Overview</a>
+                    </li>
+                    <li><a href="#readme" class="toc-link">README</a></li>
+                    <li>
+                        <a href="#ai-context" class="toc-link">AI Context</a>
+                    </li>
+                    <li>
+                        <a href="#tech-stack" class="toc-link">Tech Stack</a>
+                    </li>
+                    <li>
+                        <a href="#reflection" class="toc-link">Reflection</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="portfolio-container">
+                <!-- Back Navigation -->
+                <a href="../../index.html" class="back-link">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    Back to Team
+                </a>
+
+                <!-- Header -->
+                <header class="portfolio-header">
+                    <div class="portfolio-avatar">
+                        <span class="portfolio-avatar-icon">RN</span>
+                        <!-- Or use an image: <img src="your-avatar.jpg" alt="Rion Nunez"> -->
+                    </div>
+                    <h1 class="portfolio-name">Rion Nunez</h1>
+                    <p class="portfolio-tagline">
+                        Full-stack developer building content-driven web applications with headless CMS
+                    </p>
+                </header>
+
+                <!-- Project Overview -->
+                <section class="portfolio-section" id="overview">
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-icon">🚀</div>
+                            <h2 class="section-title">Project Overview</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                Switchback Mountain Tours is a full-stack CMS-powered website for a
+                                fictional mountain tour company. Built on the Payload CMS website
+                                template, the project demonstrates how to extend a headless CMS with
+                                custom domain-specific collections to manage real-world content like
+                                tours, trail guides, galleries, and customer testimonials.
+                            </p>
+                            <p>
+                                The site serves as both a public-facing marketing website and an
+                                admin-managed content platform, making it easy for non-technical
+                                operators to manage tour offerings, guide profiles, and site content
+                                without touching any code. Custom collections were designed on top of
+                                the base Payload template: Tours (with difficulty, pricing, and
+                                highlights), Trail Guides (with bios and certifications), Testimonials
+                                (with ratings and verification), and a Gallery collection for media
+                                management.
+                            </p>
+
+                            <a
+                                href="https://github.com/rionnunez/switchback-payload"
+                                class="project-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                    />
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- README Content -->
+                <section class="portfolio-section" id="readme">
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-icon">📋</div>
+                            <h2 class="section-title">README</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                Switchback Mountain Tours is built on the official Payload CMS website
+                                template. It includes a fully-working backend, enterprise-grade admin
+                                panel, and a production-ready Next.js frontend — extended with
+                                custom collections for the mountain tour domain.
+                            </p>
+
+                            <div class="code-wrapper">
+                                <div class="code-filename">
+                                    <div class="dots">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    README.md
+                                </div>
+                                <div class="code-block">
+                                    <pre><code># switchback-payload
+
+Switchback Mountain Tours — Payload CMS
+
+A full-stack CMS-powered website for a mountain tour company,
+built with Next.js and Payload CMS v3. Features a custom admin
+panel and public-facing site with tours, trail guides, testimonials,
+and a media gallery.
+
+## Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/rionnunez/switchback-payload
+
+# Copy environment variables
+cp .env.example .env
+
+# Install dependencies
+pnpm install
+
+# Run the dev server
+pnpm dev
+```
+
+Open http://localhost:3000 to view the app.
+
+## Custom Collections
+
+- **Tours** — name, difficulty, duration, distance, price,
+  highlights, inclusions, featured image, group size, min age
+- **Trail Guides** — name, role, bio, experience, certifications,
+  specialties, photo, assigned tours
+- **Testimonials** — customer name, tour, rating, review,
+  date, photo, verification status
+- **Gallery** — image galleries for tour pages
+
+## Seed the Database
+
+Click "seed database" in the admin panel to populate
+sample content. Warning: this is destructive.
+
+## Tech Stack
+
+Next.js · Payload CMS v3 · MongoDB · TypeScript · TailwindCSS
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- AI Context -->
+                <section class="portfolio-section" id="ai-context">
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-icon">🤖</div>
+                            <h2 class="section-title">
+                                AI Context (claude.md)
+                            </h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                The project uses an <code>AGENTS.md</code> file (rather than a
+                                <code>claude.md</code>) to provide AI tools with deep Payload CMS
+                                context. This was critical because Payload v3 is relatively new and
+                                AI models don't always have accurate knowledge of its patterns. The
+                                file covers security-critical rules (like always setting
+                                <code>overrideAccess: false</code> when passing a user to the Local
+                                API), transaction safety in hooks, and component path conventions.
+                            </p>
+
+                            <div class="code-wrapper">
+                                <div class="code-filename">
+                                    <div class="dots">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    AGENTS.md (excerpt)
+                                </div>
+                                <div class="code-block">
+                                    <pre><code># Payload CMS Development Rules
+
+You are an expert Payload CMS developer.
+When working with Payload projects, follow these rules:
+
+## Core Principles
+
+1. TypeScript-First: Always use TypeScript with proper types from Payload
+2. Security-Critical: Follow all security patterns, especially access control
+3. Type Generation: Run `generate:types` after schema changes
+4. Transaction Safety: Always pass `req` to nested operations in hooks
+5. Access Control: Understand Local API bypasses access control by default
+
+## CRITICAL SECURITY PATTERNS
+
+# ❌ SECURITY BUG: Access control bypassed
+await payload.find({
+  collection: 'posts',
+  user: someUser, // Ignored! Runs with ADMIN privileges
+})
+
+# ✅ SECURE: Enforces user permissions
+await payload.find({
+  collection: 'posts',
+  user: someUser,
+  overrideAccess: false, // REQUIRED
+})
+
+## Project Structure
+
+src/
+├── collections/   # Tours, TrailGuides, Testimonials, Gallery
+├── globals/       # Header, Footer
+├── hooks/         # Lifecycle hooks
+├── access/        # Access control functions
+└── payload.config.ts
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tech Stack -->
+                <section class="portfolio-section" id="tech-stack">
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-icon">🛠️</div>
+                            <h2 class="section-title">Tech Stack</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                The stack centers on Payload CMS v3 as the headless backend and
+                                Next.js App Router for the frontend — both running in a single
+                                deployment. MongoDB handles the database layer, which pairs well
+                                with Payload's flexible document model. TailwindCSS and shadcn/ui
+                                provide the design system, keeping UI consistent without custom CSS overhead.
+                            </p>
+
+                            <div class="tech-stack">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">Payload CMS v3</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">TailwindCSS</span>
+                                <span class="tech-tag">shadcn/ui</span>
+                                <span class="tech-tag">Lexical Editor</span>
+                                <span class="tech-tag">React Hook Form</span>
+                                <span class="tech-tag">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Reflection -->
+                <section class="portfolio-section" id="reflection">
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-icon">💡</div>
+                            <h2 class="section-title">Reflection</h2>
+                        </div>
+                        <div class="section-content">
+                            <div class="reflection-content">
+                                <p>
+                                    The biggest learning curve was understanding how Payload's Local API
+                                    handles access control — it bypasses permissions by default, which
+                                    is a footgun if you're not aware of it. Having that documented in
+                                    <code>AGENTS.md</code> meant AI-assisted code generation didn't
+                                    accidentally introduce security holes when writing hooks or
+                                    custom endpoints.
+                                </p>
+                                <p>
+                                    Designing the custom collections (Tours, TrailGuides, Testimonials,
+                                    Gallery) was the most satisfying part. Payload's field system is
+                                    expressive enough to model real domain concepts cleanly. If I were
+                                    to extend this further, I'd add tour booking functionality and
+                                    wire up scheduled publishing so new tours can go live automatically.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer class="portfolio-footer">
+                    <p>
+                        Part of the
+                        <a href="../../index.html">eightfold</a> training
+                        project
+                    </p>
+                </footer>
+            </div>
+        </div>
+
+        <script>
+            // Progress bar
+            const progressBar = document.getElementById("progress");
+            window.addEventListener("scroll", () => {
+                const windowHeight =
+                    document.documentElement.scrollHeight - window.innerHeight;
+                const progress = window.scrollY / windowHeight;
+                progressBar.style.transform = `scaleX(${progress})`;
+            });
+
+            // Scroll animations with Intersection Observer
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -100px 0px",
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, observerOptions);
+
+            document
+                .querySelectorAll(".portfolio-section")
+                .forEach((section) => {
+                    observer.observe(section);
+                });
+
+            // Table of Contents active state
+            const tocLinks = document.querySelectorAll(".toc-link");
+            const sections = document.querySelectorAll(".portfolio-section");
+
+            const tocObserver = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            tocLinks.forEach((link) =>
+                                link.classList.remove("active"),
+                            );
+                            const activeLink = document.querySelector(
+                                `.toc-link[href="#${entry.target.id}"]`,
+                            );
+                            if (activeLink) activeLink.classList.add("active");
+                        }
+                    });
+                },
+                { threshold: 0.5 },
+            );
+
+            sections.forEach((section) => tocObserver.observe(section));
+
+            // Smooth scroll for TOC links
+            tocLinks.forEach((link) => {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const target = document.querySelector(
+                        link.getAttribute("href"),
+                    );
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                        });
+                    }
+                });
+            });
+
+            // Parallax effect on orbs
+            let ticking = false;
+            window.addEventListener("scroll", () => {
+                if (!ticking) {
+                    window.requestAnimationFrame(() => {
+                        const scrolled = window.pageYOffset;
+                        const orbs = document.querySelectorAll(".orb");
+                        orbs.forEach((orb, index) => {
+                            const speed = (index + 1) * 0.05;
+                            orb.style.transform = `translateY(${scrolled * speed}px)`;
+                        });
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+        </script>
+    </body>
+</html>
