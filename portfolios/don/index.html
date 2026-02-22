@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Don Richards — eightfold</title>
+        <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../../css/styles.css" />
+        <link rel="stylesheet" href="../../css/portfolio.css" />
+    </head>
+    <body>
+        <div class="portfolio-page">
+            <!-- Animated Background -->
+            <div class="background-glow"></div>
+            <div class="background-grid"></div>
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+
+            <!-- Progress Bar -->
+            <div class="progress-bar" id="progress"></div>
+
+            <!-- Table of Contents -->
+            <nav class="toc">
+                <ul class="toc-list">
+                    <li>
+                        <a href="#overview" class="toc-link active">Overview</a>
+                    </li>
+                    <li><a href="#readme" class="toc-link">README</a></li>
+                    <li>
+                        <a href="#ai-context" class="toc-link">AI Context</a>
+                    </li>
+                    <li>
+                        <a href="#tech-stack" class="toc-link">Tech Stack</a>
+                    </li>
+                    <li>
+                        <a href="#reflection" class="toc-link">Reflection</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="portfolio-container">
+                <!-- Back Navigation -->
+                <a href="../../index.html" class="back-link">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    Back to Team
+                </a>
+
+                <!-- Header -->
+                <header class="portfolio-header">
+                    <div class="portfolio-avatar">
+                        <span class="portfolio-avatar-icon">D</span>
+                    </div>
+                    <h1 class="portfolio-name">Don Richards</h1>
+                    <p class="portfolio-tagline">
+                        Developer &amp; Systems Architect
+                    </p>
+                </header>
+
+                <!-- Project Overview -->
+                <section class="portfolio-section" id="overview">
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-icon">🚀</div>
+                            <h2 class="section-title">Project Overview</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                Fork in the Road is a landing page for a fictional food truck business. It was built as part of a Claude-assisted development exercise to explore how AI tools can accelerate frontend development while keeping the developer in full creative control.
+                            </p>
+                            <p>
+                                The site features a hero section with parallax scrolling, a menu displayed with interactive card flip animations, a weekly schedule calendar, and a signup form with a confetti celebration on submit. The entire project uses vanilla HTML, CSS, and JavaScript with zero dependencies — no frameworks, no build tools, no npm install.
+                            </p>
+
+                            <a
+                                href="https://github.com/bxbmedia/eightfold"
+                                class="project-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                    />
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- README Content -->
+                <section class="portfolio-section" id="readme">
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-icon">📋</div>
+                            <h2 class="section-title">README</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                Fork in the Road is a zero-dependency landing page. No package manager, no build step — just open the HTML file and go. The project was designed to be self-contained and easy to run locally.
+                            </p>
+
+                            <div class="code-wrapper">
+                                <div class="code-filename">
+                                    <div class="dots">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    README.md
+                                </div>
+                                <div class="code-block">
+                                    <pre><code># Fork in the Road
+
+A food truck landing page built with vanilla HTML, CSS, and JavaScript.
+
+## Features
+
+- Parallax hero section with scroll-driven effects
+- Menu cards with flip animation on hover
+- Interactive weekly schedule calendar
+- Signup form with confetti celebration
+- Mouse-tracking glow effect
+- Scroll-triggered animations throughout
+
+## Run Locally
+
+```bash
+# No install needed — just open the file
+open index.html
+
+# Or use a simple server
+python -m http.server 8000
+```
+
+## Structure
+
+```
+fork-in-the-road/
+├── index.html    # Everything lives here
+├── css/
+│   └── styles.css
+└── js/
+    └── main.js
+```
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- AI Context -->
+                <section class="portfolio-section" id="ai-context">
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-icon">🤖</div>
+                            <h2 class="section-title">
+                                AI Context (claude.md)
+                            </h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                The claude.md file gave Claude the project scope, design constraints, and creative direction upfront. The key decision was specifying vanilla-only — no frameworks. This kept Claude focused on clean, readable code instead of reaching for React or Tailwind. The food truck theme and interactive elements (card flips, confetti, parallax) were defined as requirements so the AI had clear targets to hit.
+                            </p>
+
+                            <div class="code-wrapper">
+                                <div class="code-filename">
+                                    <div class="dots">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    claude.md
+                                </div>
+                                <div class="code-block">
+                                    <pre><code># Fork in the Road — Food Truck Landing Page
+
+## Project Context
+Build a single-page landing page for a fictional food truck.
+Vanilla HTML, CSS, and JavaScript only — no frameworks, no dependencies.
+
+## Design Direction
+- Dark theme with warm accent colors (food/street vibe)
+- Interactive elements: card flip menu, parallax hero, confetti on signup
+- Mobile-responsive, smooth scroll animations
+- Mouse glow effect for visual polish
+
+## Constraints
+- Zero npm dependencies
+- Single index.html entry point
+- All styles in dedicated CSS file
+- All interactivity in dedicated JS file
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tech Stack -->
+                <section class="portfolio-section" id="tech-stack">
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-icon">🛠️</div>
+                            <h2 class="section-title">Tech Stack</h2>
+                        </div>
+                        <div class="section-content">
+                            <p>
+                                Deliberately minimal. The goal was to see how far vanilla web technologies go when paired with AI-assisted development. No build tools, no transpilers — just the browser's native capabilities.
+                            </p>
+
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript (ES6+)</span>
+                                <span class="tech-tag">Claude Code</span>
+                                <span class="tech-tag">GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Reflection -->
+                <section class="portfolio-section" id="reflection">
+                    <div class="section-card">
+                        <div class="section-header">
+                            <div class="section-icon">💡</div>
+                            <h2 class="section-title">Reflection</h2>
+                        </div>
+                        <div class="section-content">
+                            <div class="reflection-content">
+                                <p>
+                                    The biggest takeaway was how much the claude.md file shapes the output. When the constraints are clear and the creative direction is specific, the AI stays on track and produces code you actually want to keep. When the context is vague, you spend more time correcting than building.
+                                </p>
+                                <p>
+                                    Going vanilla was the right call for this exercise. It forced both me and the AI to work with fundamentals — no hiding behind framework abstractions. Every animation, every interaction had to be written from scratch. The result is a lightweight page that loads instantly and has zero build complexity.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer class="portfolio-footer">
+                    <p>
+                        Part of the
+                        <a href="../../index.html">eightfold</a> training
+                        project
+                    </p>
+                </footer>
+            </div>
+        </div>
+
+        <script>
+            // Progress bar
+            const progressBar = document.getElementById("progress");
+            window.addEventListener("scroll", () => {
+                const windowHeight =
+                    document.documentElement.scrollHeight - window.innerHeight;
+                const progress = window.scrollY / windowHeight;
+                progressBar.style.transform = `scaleX(${progress})`;
+            });
+
+            // Scroll animations with Intersection Observer
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -100px 0px",
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, observerOptions);
+
+            document
+                .querySelectorAll(".portfolio-section")
+                .forEach((section) => {
+                    observer.observe(section);
+                });
+
+            // Table of Contents active state
+            const tocLinks = document.querySelectorAll(".toc-link");
+            const sections = document.querySelectorAll(".portfolio-section");
+
+            const tocObserver = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            tocLinks.forEach((link) =>
+                                link.classList.remove("active"),
+                            );
+                            const activeLink = document.querySelector(
+                                `.toc-link[href="#${entry.target.id}"]`,
+                            );
+                            if (activeLink) activeLink.classList.add("active");
+                        }
+                    });
+                },
+                { threshold: 0.5 },
+            );
+
+            sections.forEach((section) => tocObserver.observe(section));
+
+            // Smooth scroll for TOC links
+            tocLinks.forEach((link) => {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const target = document.querySelector(
+                        link.getAttribute("href"),
+                    );
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                        });
+                    }
+                });
+            });
+
+            // Parallax effect on orbs
+            let ticking = false;
+            window.addEventListener("scroll", () => {
+                if (!ticking) {
+                    window.requestAnimationFrame(() => {
+                        const scrolled = window.pageYOffset;
+                        const orbs = document.querySelectorAll(".orb");
+                        orbs.forEach((orb, index) => {
+                            const speed = (index + 1) * 0.05;
+                            orb.style.transform = `translateY(${scrolled * speed}px)`;
+                        });
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+        </script>
+    </body>
+</html>
